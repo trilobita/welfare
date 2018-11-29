@@ -15,6 +15,9 @@
 		18A4645521A2A51E0072113D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A4645421A2A51E0072113D /* main.m */; };
 		18A4645F21A2A51E0072113D /* welfareTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A4645E21A2A51E0072113D /* welfareTests.m */; };
 		18A4646A21A2A51E0072113D /* welfareUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A4646921A2A51E0072113D /* welfareUITests.m */; };
+		18EA183221AB96D600DF4AFB /* QXCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EA183121AB96D600DF4AFB /* QXCViewController.m */; };
+		18EA183521AB972100DF4AFB /* DatabaseTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EA183421AB972100DF4AFB /* DatabaseTool.m */; };
+		64AB419AE8894DE3C51C50C9 /* libPods-welfare.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 703AD9C0659EB2156C3CF335 /* libPods-welfare.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,13 @@
 		18A4646521A2A51E0072113D /* welfareUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = welfareUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18A4646921A2A51E0072113D /* welfareUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = welfareUITests.m; sourceTree = "<group>"; };
 		18A4646B21A2A51E0072113D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18EA183021AB96D600DF4AFB /* QXCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QXCViewController.h; sourceTree = "<group>"; };
+		18EA183121AB96D600DF4AFB /* QXCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QXCViewController.m; sourceTree = "<group>"; };
+		18EA183321AB972100DF4AFB /* DatabaseTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DatabaseTool.h; sourceTree = "<group>"; };
+		18EA183421AB972100DF4AFB /* DatabaseTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DatabaseTool.m; sourceTree = "<group>"; };
+		2DCEBE7829CF4DDD64B6E371 /* Pods-welfare.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-welfare.release.xcconfig"; path = "Pods/Target Support Files/Pods-welfare/Pods-welfare.release.xcconfig"; sourceTree = "<group>"; };
+		703AD9C0659EB2156C3CF335 /* libPods-welfare.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-welfare.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5FF64F8303C849D04A837E9 /* Pods-welfare.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-welfare.debug.xcconfig"; path = "Pods/Target Support Files/Pods-welfare/Pods-welfare.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64AB419AE8894DE3C51C50C9 /* libPods-welfare.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +96,8 @@
 				18A4645D21A2A51E0072113D /* welfareTests */,
 				18A4646821A2A51E0072113D /* welfareUITests */,
 				18A4644321A2A5090072113D /* Products */,
+				8E21647EB7AAE0D5AFAE2E20 /* Pods */,
+				46EDC5D71244F76540E34605 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,8 +116,12 @@
 			children = (
 				18A4644521A2A5090072113D /* AppDelegate.h */,
 				18A4644621A2A5090072113D /* AppDelegate.m */,
+				18EA183321AB972100DF4AFB /* DatabaseTool.h */,
+				18EA183421AB972100DF4AFB /* DatabaseTool.m */,
 				18A4644821A2A5090072113D /* ViewController.h */,
 				18A4644921A2A5090072113D /* ViewController.m */,
+				18EA183021AB96D600DF4AFB /* QXCViewController.h */,
+				18EA183121AB96D600DF4AFB /* QXCViewController.m */,
 				18A4644B21A2A5090072113D /* Main.storyboard */,
 				18A4644E21A2A51E0072113D /* Assets.xcassets */,
 				18A4645021A2A51E0072113D /* LaunchScreen.storyboard */,
@@ -132,6 +149,23 @@
 			path = welfareUITests;
 			sourceTree = "<group>";
 		};
+		46EDC5D71244F76540E34605 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				703AD9C0659EB2156C3CF335 /* libPods-welfare.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8E21647EB7AAE0D5AFAE2E20 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D5FF64F8303C849D04A837E9 /* Pods-welfare.debug.xcconfig */,
+				2DCEBE7829CF4DDD64B6E371 /* Pods-welfare.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,6 +173,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 18A4646E21A2A51E0072113D /* Build configuration list for PBXNativeTarget "welfare" */;
 			buildPhases = (
+				144F16269716D547097AE9BE /* [CP] Check Pods Manifest.lock */,
 				18A4643E21A2A5090072113D /* Sources */,
 				18A4643F21A2A5090072113D /* Frameworks */,
 				18A4644021A2A5090072113D /* Resources */,
@@ -257,13 +292,40 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		144F16269716D547097AE9BE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-welfare-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		18A4643E21A2A5090072113D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				18A4644A21A2A5090072113D /* ViewController.m in Sources */,
+				18EA183221AB96D600DF4AFB /* QXCViewController.m in Sources */,
 				18A4645521A2A51E0072113D /* main.m in Sources */,
+				18EA183521AB972100DF4AFB /* DatabaseTool.m in Sources */,
 				18A4644721A2A5090072113D /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -433,16 +495,18 @@
 		};
 		18A4646F21A2A51E0072113D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5FF64F8303C849D04A837E9 /* Pods-welfare.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JNHD6E6FT4;
 				INFOPLIST_FILE = welfare/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = fd.welfare;
+				PRODUCT_BUNDLE_IDENTIFIER = trilobite.wang;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -450,16 +514,18 @@
 		};
 		18A4647021A2A51E0072113D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2DCEBE7829CF4DDD64B6E371 /* Pods-welfare.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JNHD6E6FT4;
 				INFOPLIST_FILE = welfare/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = fd.welfare;
+				PRODUCT_BUNDLE_IDENTIFIER = trilobite.wang;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

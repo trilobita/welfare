@@ -1,4 +1,4 @@
-//
+
 //  AppDelegate.m
 //  welfare
 //
@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "ViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,20 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    //创建一个窗口,并初始化大小为设备大小
+    
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:[[ViewController alloc] init]];
+    
+    self.window  = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    
+    //设置窗口背景颜色
+    self.window.backgroundColor = [UIColor whiteColor];
+    
+    //给窗口添加一个根视图
+    self.window.rootViewController = navigationController;
+    
+    //设置窗口可见
+    [self.window makeKeyAndVisible];
     return YES;
 }
 
